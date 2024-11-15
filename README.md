@@ -1,1 +1,1 @@
-# core-java
+# collection-framework
