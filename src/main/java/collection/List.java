@@ -2,6 +2,7 @@ package collection;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Vector;
 
 public class List {
 
@@ -9,6 +10,8 @@ public class List {
 		// TODO Auto-generated method stub
 		System.out.println("Hello World");
 		useOfArrayList();
+		useOfLinkedList();
+		useOfVector();
 	}
 	
 	/*The ArrayList class is a Java class that you can use to store lists of objects. 
@@ -63,6 +66,27 @@ public class List {
         // Printing the LinkedList
         System.out.println(list);
 	    
+	}
+	
+	public static void useOfVector() {
+		// Create a new vector
+        Vector<Integer> v = new Vector<>(3, 2);
+
+        // Add elements to the vector
+        v.addElement(1);
+        v.addElement(2);
+        v.addElement(3);
+
+        // Insert an element at index 1
+        v.insertElementAt(0, 1);
+
+        // Remove the element at index 2
+        v.removeElementAt(2);
+
+        // Print the elements of the vector
+        for (int i : v) {
+            System.out.println(i);
+        }
 	}
 	
 }
